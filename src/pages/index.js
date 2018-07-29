@@ -2,10 +2,21 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const IndexPage = () => (
-  <div>
-    <h1>Save hundreds of dollars every year!</h1>
-    <p>With these simple tricks, you'll have the telcos at their knees for your business.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+  <div className="intro">
+
+
+    <div className="flexFiller"></div>
+
+    <div className="homegreeting">
+      <p className="greeting">Hello, I'm Alexis</p>
+      <p className="role">Digital Product Designer</p>
+    </div>
+
+
+    <Link to="/page-2/">
+      <p>See my work</p>
+      <img src="/images/downchevron.svg" />
+    </Link>
   </div>
 )
 

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Cheap Canada Phone',
+    title: 'Alexis Morin - Digital Product Designer',
   },
   plugins: ['gatsby-plugin-react-helmet'],
 }
