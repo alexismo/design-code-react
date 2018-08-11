@@ -25,7 +25,7 @@ a {
   background: url('../images/watertown.jpg');
   background-size: cover;
   background-position: center;
-  height: 900px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   line-height: inherit;
@@ -57,4 +57,17 @@ p.role {
   text-align: center;
   font-weight: 600;
   margin-bottom: 26px;
+}
+
+.seeMyWork p{
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
+@media (max-width: 640px){
+  /* resize greeting font size ?*/
+
+  p.greeting {
+    line-height: 1.2;
+  }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import DownChevron from '../images/downchevron.svg'
 
 const IndexPage = () => (
   <div className="intro">
@@ -13,9 +14,9 @@ const IndexPage = () => (
     </div>
 
 
-    <Link to="/page-2/">
+    <Link to="/page-2/" className="seeMyWork">
       <p>See my work</p>
-      <img src="/images/downchevron.svg" />
+      <img src={DownChevron} />
     </Link>
   </div>
 )
