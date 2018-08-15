@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 * {
-    /* webkit fixes... */
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
+  /* webkit fixes... */
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
 
-body{
+body {
   font-family: 'proxima-nova-regular', 'Open Sans', Roboto, Ubuntu, sans-serif;
   margin: 0;
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
   line-height: 1.3;
-  color:#303033;
+  color: #303033;
 }
 
 a {
@@ -30,9 +29,10 @@ a {
   flex-direction: column;
   line-height: inherit;
   justify-content: center;
+  position: relative;
 }
 
-.homegreeting{
+.homegreeting {
   opacity: 0;
   animation: GreetingAnimation;
   animation-duration: 1.5s;
@@ -41,7 +41,8 @@ a {
   animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.homegreeting, .flexFiller {
+.homegreeting,
+.flexFiller {
   margin: 0 auto;
   text-align: center;
   flex-grow: 1;
@@ -68,48 +69,65 @@ p.role {
   margin-bottom: 26px;
 }
 
-.seeMyWork button{
+.seeMyWork button {
   font-size: 18px;
   padding: 18px 24px;
   border-radius: 100px;
   border-style: none;
   color: #fff;
-  background: linear-gradient(0deg, rgba(81,81,87,1) 0%, rgba(81,81,87,1) 100%);
+  background: linear-gradient(0deg, rgba(81, 81, 87, 1) 0%, rgba(81, 81, 87, 1) 100%);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.20);
   margin: 0 0 10px 0;
   cursor: pointer;
-
   transition: 0.225s cubic-bezier(0.2, 0.8, 0.2, 1);
-
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.seeMyWork button img{
-  margin-left:12px;
+.seeMyWork button img {
+  margin-left: 12px;
 }
 
-.seeMyWork button:hover{
+.seeMyWork button:hover {
   box-shadow: 0 7px 5px rgba(0, 0, 0, 0.25);
   transform: translateY(-1px);
 }
 
-@media (max-width: 640px){
+@media (max-width: 640px) {
   /* resize greeting font size ?*/
-
   p.greeting {
     line-height: 1.2;
   }
 }
 
-@keyframes GreetingAnimation{
-  0%{
+@keyframes GreetingAnimation {
+  0% {
     opacity: 0;
     transform: translateY(20px);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+.intro svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.intro .logos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 40px;
+  margin: 100px 0;
+  justify-items: center;
+}
+
+@media (max-width: 640px) {
+  .intro .logos{
+    grid-template-columns: repeat(3, 1fr);
   }
 }
