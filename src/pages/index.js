@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import DownChevron from '../images/downchevron.svg'
+import SeeMyWorkArrow from '../images/seeMyWorkArrow.svg'
 
 const IndexPage = () => (
   <div className="intro">
@@ -13,8 +13,9 @@ const IndexPage = () => (
     </div>
 
     <Link to="/page-2/" className="seeMyWork">
-      <button>See&nbsp;my&nbsp;work
-        <img src={DownChevron} />
+      <button>
+        <span>See&nbsp;my&nbsp;work</span>
+        <img src={SeeMyWorkArrow} />
       </button>
         {/* <img src={DownChevron} /> */}
     </Link>
