@@ -1,0 +1,77 @@
+.Card {
+    width: 960px;
+    height: 470px;
+    position: relative;
+    overflow: hidden;
+    padding: 36px 50px;
+}
+
+.Card .projectTitleImage {
+    width: 300px;
+}
+
+.Card p.projectTitle {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.Card .projectHeroImage {
+    width: 100%;
+    max-width: 960px;
+    height: 470px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.Card .projectHeroImage img {
+    position: absolute;
+    width: 960px;
+    min-height: 400px;
+
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+    transform-origin: 70% 60%;
+    transition: transform 4.5s, opacity 4.5s;
+}
+
+.Card .projectHeroImage .overlay {
+    opacity: 0;
+}
+
+.Card:hover img.overlay {
+    transform: scale(1.05);
+    opacity: 1;
+  }  
+
+.Card:hover img.underlay {
+    transform: scale(1.05);
+}
+
+.projectDescriptionAndLink {
+    width: 277px;
+    height: calc(100% - 72px);
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.viewProjectLink {
+    align-self: end;
+}
+
+.projectDescriptionAndLink a{
+    color: #fff;
+}
+
+.projectDescriptionAndLink a:hover .viewProjectLinkRightChevron {
+    margin-left: 35px;
+    transition: margin 250ms ease;
+}
+
+.viewProjectLinkRightChevron {
+    margin-left: 17px;
+    transition: margin 250ms ease;
+}

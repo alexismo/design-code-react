@@ -1,8 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import SeeMyWorkArrow from '../images/seeMyWorkArrow.svg'
+import Card from '../components/Card';
 
 const IndexPage = () => (
+  <div>
   <div className="intro">
 
     <div className="flexFiller"></div>
@@ -41,6 +43,33 @@ const IndexPage = () => (
       </path>
     </svg>
   </div>
+
+  <div className="projectCards">
+    <ul>
+      <li>
+        <Card 
+          theme='dark'
+          projectTitleImage={require('../images/projects/aop/jagAOPLogo@2x.png')}
+          title="20 City Cross-China Tour"
+          projectLink="artofperformance.html"
+          projectHeroUnderlay={require('../images/projects/aop/aopHeroBW@2x.jpg')} 
+          projectHeroOverlay={require('../images/projects/aop/aopHero@2x.jpg')} 
+          />
+      </li>
+      <li>
+        <Card 
+          theme='dark'
+          projectTitleImage={require('../images/projects/aop/jagAOPLogo@2x.png')}
+          title="20 City Cross-China Tour"
+          projectLink="artofperformance.html"
+          projectHeroUnderlay={require('../images/projects/aop/aopHeroBW@2x.jpg')} 
+          projectHeroOverlay={require('../images/projects/aop/aopHero@2x.jpg')} 
+          />
+      </li>
+    </ul>
+  </div>
+
+</div>
 )
 
 export default IndexPage
