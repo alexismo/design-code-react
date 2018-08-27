@@ -1,76 +1,82 @@
-.Header{
-    position: fixed;
-    width: 100%;
-    margin: 80px 0 0 0;
-    background-color: #444449;
-    z-index: 100;
+.Header {
+  position: fixed;
+  width: 100%;
+  margin: 80px 0 0 0;
+  background-color: #444449;
+  z-index: 100;
+
+  transition: 0.225s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.HeaderGroup{
-    max-width: 960px;
-    height: 80px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    align-items: center;
+.HeaderScrolled {
+  margin: 0;
+}
+
+.HeaderGroup {
+  max-width: 960px;
+  height: 80px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
 }
 
 .Header a {
-    color: #fff;
-    font-weight: normal;
+  color: #fff;
+  font-weight: normal;
 }
 
 .Header a:hover {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .HeaderLogo {
-    padding: 0 0 0 20px;
+  padding: 0 0 0 20px;
 }
 
 .HeaderLogo h1 {
-    text-transform: uppercase;
-    font-size: 18px;
-    letter-spacing: 1.12px;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1.12px;
 }
 
 .HeaderLogo h2 {
-    text-transform: uppercase;
-    font-size: 18px;
-    letter-spacing: 7.42px;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 7.42px;
 }
 
 .HeaderLinks {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .HeaderLinks a {
-    width: 50%;
-    text-align: center;
+  width: 50%;
+  text-align: center;
 }
 
 .SocialIcons {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .SocialIcons ul {
-    list-style: none;
+  list-style: none;
 }
 
 .SocialIcons li {
-    margin-left: 16px;
-    list-style: none;
+  margin-left: 16px;
+  list-style: none;
 }
 
-@media (max-width: 640px){
-    .Header {
-        margin: 0;
-    }
+@media (max-width: 640px) {
+  .Header {
+    margin: 0;
+  }
 
-    .HeaderSocial {
-        display: none;
-    }
+  .HeaderSocial {
+    display: none;
+  }
 }
