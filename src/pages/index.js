@@ -92,7 +92,7 @@ const IndexPage = () => (
     <SectionCaption>12 sections - 6 hours</SectionCaption>
     <SectionCellGroup>
       {staticdata.cells.map(cell => (
-        <Cell title={cell.title} image={cell.image} />
+        <Cell key={cell.key} title={cell.title} image={cell.image} />
       ))}
     </SectionCellGroup>
   </div>
