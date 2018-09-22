@@ -4,6 +4,7 @@ module.exports = {
     description: 'Portfolio Website of Alexis Morin, Interaction Designer',
     keywords: 'alexis morin, portfolio, ux design, interaction design',
   },
+  pathPrefix: '/static',
   plugins: [
     'gatsby-plugin-react-helmet',
     {

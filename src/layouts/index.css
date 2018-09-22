@@ -21,7 +21,7 @@ a {
 }
 
 .intro {
-  background: url('../images/watertown.jpg');
+  background: url('/images/watertown.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -75,8 +75,12 @@ p.role {
   border-radius: 100px;
   border-style: none;
   color: #fff;
-  background: linear-gradient(0deg, rgba(81, 81, 87, 1) 0%, rgba(81, 81, 87, 1) 100%);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.20);
+  background: linear-gradient(
+    0deg,
+    rgba(81, 81, 87, 1) 0%,
+    rgba(81, 81, 87, 1) 100%
+  );
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   margin: 0 0 10px 0;
   cursor: pointer;
   transition: 0.225s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -94,12 +98,12 @@ p.role {
   transform: translateY(-1px);
 }
 
-.projectCards{
+.projectCards {
   max-width: 960px;
   margin: 0 auto;
 }
 
-.projectCards ul{
+.projectCards ul {
   list-style: none;
 }
 
@@ -145,7 +149,7 @@ p.role {
 }
 
 @media (max-width: 640px) {
-  .intro .logos{
+  .intro .logos {
     grid-template-columns: repeat(3, 1fr);
   }
 }
